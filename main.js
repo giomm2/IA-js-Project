@@ -1,3 +1,3 @@
 import './style.css'
-import './counter.js'
+import './core.js'
 import './worker.js'
