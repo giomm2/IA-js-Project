@@ -1,3 +1,3 @@
 import './style.css'
-import './core.js'
-import './worker.js'
+import './src/ai/core.js'
+import './src/ai/worker.js'

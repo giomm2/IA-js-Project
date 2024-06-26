@@ -15,7 +15,7 @@ const $info = document.querySelector('small')
 let messages = []
 
 const engine = await CreateWebWorkerMLCEngine(
-  new Worker('/worker.js', { type: 'module' }),
+  new Worker('src/ai/worker.js', { type: 'module' }),
   SELECTED_MODEL,{
     initProgressCallback: (info) => {
       
