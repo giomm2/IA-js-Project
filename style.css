@@ -21,7 +21,7 @@ main {
   scroll-behavior: smooth;
 }
 
-ul {
+:is(ul) {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -34,7 +34,7 @@ ul {
   margin: 4px 0;
   padding: 4px 8px;
 
-  span {
+  :is(span) {
     width: 36px;
     height: 36px;
     background-color: #eee;
@@ -46,7 +46,7 @@ ul {
     border-radius: 100%;
   }
 
-  p {
+  :is(p) {
     padding: 4px 8px;
     border-radius: 4px;
     margin-top: 4px;
@@ -55,23 +55,23 @@ ul {
   &.user {
     align-self: flex-end;
     align-items: flex-end;
-    span, p {
+    :is(span), :is(p) {
       background-color: rgb(136, 209, 136);
     }
   }
 
   &.bot {
     align-self: flex-start;
-    span, p {
+    :is(span), :is(p)  {
       background-color: rgb(142, 223, 223);
     }
   }
 }
 
-form {
+:is(form) {
   display: flex;
 
-  input {
+  :is(input) {
     flex-grow: 1;
     border: 0;
     padding: 8px;
@@ -79,7 +79,7 @@ form {
     border: 1px solid #ccc;
   }
 
-  button {
+  :is(button) {
     background-color: #09f;
     border: 0;
     color: white;
@@ -99,7 +99,7 @@ form {
     }
   }
 
-  small {
+  :is(small) {
     font-size: 10px;
     color: #555;
     position: fixed;
