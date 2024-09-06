@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 export default defineConfig({
-  base: '/ai/',
+  base: '/src/ai/',
   plugins: [],
   esbuild: {
     supported: {
